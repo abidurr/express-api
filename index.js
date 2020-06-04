@@ -1,19 +1,23 @@
 const express = require("express");
 const path = require("path");
+const members = require("./Members");
+const logger = require("./middleware/logger")
 
 const app = express();
 
-/* 
-app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "public", "index.html"));
-})
-*/
+// initialize middleware
+app.use(logger);
 
-// set static routes
-app.use(express.static(path.join(__dirname, "public")))
+// get all members
+app.get("/api/members", (req, res) => res.json(members));
+
+// get single member
+app.get("/api/members/:id", (req, res) => {
+    
+})
+
+app.use(express.static(path.join(__dirname, "public")));
 
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => console.log(`Server listening on port ${PORT}`));
-
-// run `node index`

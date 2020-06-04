@@ -14,3 +14,5 @@ app.use("/api/members", require("./routes/api/members"));
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => console.log(`Server listening on port ${PORT}`));
+
+// todo: possibly add views 

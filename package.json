@@ -1,22 +1,27 @@
 {
-  "name": "express-api",
-  "version": "1.0.0",
-  "description": "A boilerplate repository for an Express REST API.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/abidurr/express-api.git"
-  },
-  "author": "abidurr",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/abidurr/express-api/issues"
-  },
-  "homepage": "https://github.com/abidurr/express-api#readme",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+    "name": "express-api",
+    "version": "1.0.0",
+    "description": "A boilerplate repository for an Express REST API.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index",
+        "dev": "nodemon index"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/abidurr/express-api.git"
+    },
+    "author": "abidurr",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/abidurr/express-api/issues"
+    },
+    "homepage": "https://github.com/abidurr/express-api#readme",
+    "dependencies": {
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.4"
+    }
 }

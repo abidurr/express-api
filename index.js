@@ -1,11 +1,7 @@
 const express = require("express");
 const path = require("path");
-// const logger = require("./middleware/logger")
 
 const app = express();
-
-// initialize middleware
-// app.use(logger);
 
 // body parser middleware for json and form data
 app.use(express.json());

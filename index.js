@@ -7,6 +7,10 @@ const app = express();
 // initialize middleware
 // app.use(logger);
 
+// body parser middleware for json and form data
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/api/members", require("./routes/api/members"));

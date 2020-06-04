@@ -71,6 +71,7 @@ router.delete("/:id", (req, res) => {
         (member) => member.id === parseInt(req.params.id)
     );
 
+    // TODO: check if member actually gets deleted
     if (found) {
         res.json({
             msg: "Member deleted!",

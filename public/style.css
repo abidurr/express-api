@@ -1,4 +1,10 @@
 body {
     background-color: black;
     color: aquamarine;
+    text-align: center;
+    padding: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
